@@ -3,7 +3,7 @@
     <head>
         <title>My first Website</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
+        <!-- <link rel="stylesheet" href="style.css"> -->
 
         <!-- Embed Style Method -->
         <style>
@@ -11,12 +11,56 @@
                 background: url(Images/central_park.jpg) 0 -200px no-repeat;
                 background-size: 1500px;
                 height: 400px;
+                padding-top: 100px;
+                padding-left: 100px;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            li {
+                list-style-type: none;
+                display: inline;
+                padding: 0 20px;
+            }
+            li a {
+                text-decoration: none;
+            }
+            li a:link {
+                color: #000;
+            }
+            li a:visited {
+                color: #818db3;
+            }
+            li a:hover {
+                color: #333;
+            }
+            li a:active {
+                color: #753a30;
+            }
+            nav {
+                background-color: rgb(255, 245, 238);
+                height: 50px;
+                text-align: center;
+                padding-top: 2px;
+            }
+            main {
+                height: 400px;
+            }
+            main h1 {
+                color: rgb(129, 141, 179);
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            footer {
+                height: 40px;
+                background-color: rgb(128, 141, 179);
+                text-align: center;
+                padding-top: 20px;
+                color: rgb(211, 218, 240);
             }
         </style>
     </head>
     <body>
         <div id="container">
-        <header><div class="main-header"><p>My website brand</p></div></header>
+        <header style="font-size: 60px; color: #fff;"><div class="main-header"><p>My website brand</p></div></header>
         
         <nav>
             <ul>
