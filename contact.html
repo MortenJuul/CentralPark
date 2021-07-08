@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My third web page</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="container">
+        <header><div class="main-header"><p>My website brand</p></div></header>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>This is my Third heading</h1>
+            <p>This is my Third paragraph</p>
+            <img src="Images/central_park.jpg" alt="Central Park" width="500">
+
+            <table border="1">
+                <caption>Calories Comparison of Popular Burgers</caption>
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Bic Mac</th>
+                        <th>Whopper</th>
+                        <th>Dave's Double</th>
+                        <th>Whataburger</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Calories</td>
+                        <td>563</td>
+                        <td>677</td>
+                        <td>870</td>
+                        <td>590</td>
+                    </tr>
+                    <tr>
+                        <td>Fat</td>
+                        <td>30gm</td>
+                        <td>40gm</td>
+                        <td>51gm</td>
+                        <td>25gm</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Vendor</td>
+                        <td>MacD</td>
+                        <td>Burger King</td>
+                        <td>Wendys</td>
+                        <td>Whataburger</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <form action="/signup" method="post">
+                <fieldset>
+                    <legend>User personal information</legend>
+                    <label for="fname">Enter your full name</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="email">Enter your email</label><br>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="phone">Enter your phone</label><br>
+                    <input type="text" id="phone" name="phone"><br>
+                    <br><label for="gender">Select your gender</label><br>
+                    <input type="radio" name="gender" id="gender" value="male">Male
+                    <input type="radio" name="gender" id="gender" value="female">Female <br>
+                    <br><label for="contact-method">How should we contact you?</label><br>
+                    <select name="contact-method" id="contact-method">
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                    </select><br><br>
+                    <label for="reason">Tell us the reason of your visit today:</label><br>
+                    <textarea name="reason" id="reason" cols="30" rows="5"></textarea><br><br>
+                    <input type="submit" value="Sign-Up">
+                </fieldset> 
+            </form>
+        </main>
+        <footer>&copy; 2021</footer>
+        </div>
+    </body>
+</html> 
