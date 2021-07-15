@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Central Park</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="container">
+        <header><div class="main-header"><p>My website brand</p></div></header>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>This is my fourth heading</h1>
+            <p>This is my fourth paragraph</p>
+
+            <ul id="album">
+                <!-- <li id="photo"><img src="Images/winterland1.jpg" alt=""></li>
+                <li id="photo"><img src="Images/winterland2.jpg" alt=""></li>
+                <li id="photo"><img src="Images/winterland3.jpg" alt=""></li>
+                <li id="photo"><img src="Images/winterland4.jpg" alt=""></li>
+                <li id="photo"><img src="Images/winterland5.jpg" alt=""></li>
+                <li id="photo"><img src="Images/winterland6.jpg" alt=""></li> -->
+            </ul>
+        </main>
+        <footer>&copy; 2021</footer>
+        </div>
+        <script>
+            let photos = [];
+            let fileNames = [];
+            let imageList = [];
+            let image;
+            let openList = "<li id='photo'>";
+            let  closeList = "</li>";
+
+            for (let i = 0; i < 6; i++) {
+                fileNames.push(`winterland${i+1}`);
+                photos.push(`<img src='Images/${fileNames[i]}.jpg'>`);
+                image = openList + photos[i] + closeList;
+                imageList.push(image);
+            }
+            document.getElementById("album").innerHTML = imageList;
+        </script>
+    </body>
+</html> 
