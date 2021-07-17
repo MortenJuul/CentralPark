@@ -18,8 +18,8 @@
             </ul>
         </nav>
         <main>
-            <h1>This is my fourth heading</h1>
-            <p>This is my fourth paragraph</p>
+            <h1>NYC Central Park in winter time</h1>
+            <p>A gallery of beauty...</p>
 
             <ul id="album">
                 <!-- <li id="photo"><img src="Images/winterland1.jpg" alt=""></li>
@@ -32,21 +32,22 @@
         </main>
         <footer>&copy; 2021</footer>
         </div>
-        <script>
-            let photos = [];
-            let fileNames = [];
-            let imageList = [];
-            let image;
-            let openList = "<li id='photo'>";
-            let  closeList = "</li>";
+        <script src="gallery.js"></script>
+        <!-- <script> 
+            // let photos = [];
+            // let fileNames = [];
+            // let imageList = [];
+            // let image;
+            // let openList = "<li id='photo'>";
+            // let  closeList = "</li>";
 
-            for (let i = 0; i < 6; i++) {
-                fileNames.push(`winterland${i+1}`);
-                photos.push(`<img src='Images/${fileNames[i]}.jpg'>`);
-                image = openList + photos[i] + closeList;
-                imageList.push(image);
-            }
-            document.getElementById("album").innerHTML = imageList;
-        </script>
+            // for (let i = 0; i < 6; i++) {
+            //     fileNames.push(`winterland${i+1}`);
+            //     photos.push(`<img src='Images/${fileNames[i]}.jpg'>`);
+            //     image = openList + photos[i] + closeList;
+            //     imageList.push(image);
+            // }
+            // document.getElementById("album").innerHTML = imageList.join("");
+        </script> -->
     </body>
 </html> 
