@@ -26,8 +26,7 @@ fetch("galleryData.json")
 
 let openCard = (i) => {
     document.getElementById("card").style.display = "unset";
-    document.getElementById("card").focus()
-    document.getElementById("card-title").innerHTML = galleryArr[i].caption;
+    document.getElementById("card-title").innerHTML = `<h2>${galleryArr[i].caption}</h2>`;
     document.getElementById("card-text").innerHTML = galleryArr[i].description;
 }
 
